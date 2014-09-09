@@ -59,7 +59,7 @@ try {
         $mail->isSMTP();
         $mail->Host = 'mail.internode.on.net';
         $mail->SMTPAuth = false;
-        $mail->setFrom('no-reply@wrud.tfel.edu.au', 'TfEL App Support');
+        $mail->setFrom('no-reply@events.tfel.edu.au', 'TfEL App Support');
         $mail->addAddress($cleanData[emailaddress], $cleanData[firstname]);
         $mail->Subject = '[TfEL Events] Teacher Registration';
         $mail->Body    = '<!DOCTYPE html>
@@ -71,7 +71,7 @@ try {
         <h1 style="color: #ec5945;">TfEL Events - Registration</h1>
         <p>Hello '.$cleanData[firstname].',</p>
         <p>You, or someone pretending to be you has registered for the TfEL App &prime;TfEL Events&prime;.</p>
-        <p>If it was you, confirm your email address by <a href="https://events.tfel.edu.au/verify_format.php?email='.$cleanData[emailaddress].'&edu_domain=true&authrandom=VC3XD4L3E">clicking here</a>. If you didn\'t make this request, you can safely ignore this message, no further action will be taken.</p>
+        <p>If it was you, confirm your email address by <a href="https://events.tfel.edu.au/attendees/verify_format.php?email='.$cleanData[emailaddress].'&edu_domain=true&authrandom=VC3XD4L3E">clicking here</a>. If you didn\'t make this request, you can safely ignore this message, no further action will be taken.</p>
         <p>If you believe that someone may be attempting to use / retrieve your details illegitimately, please forward this message to <a href="mailto:aidancornelius@research.tfel.edu.au">Aidan Cornelius</a>.</p>
         <p>Best Wishes,</p>
         <p>The Teaching for Effective Learning Team</p>
@@ -80,7 +80,7 @@ try {
     </div>
 </body>
 </html>';
-        $mail->AltBody = 'Hello '.$cleanData[firstname].'\nYou, or someome pretending to be you has registered for the TfEL App TfEL Events.\nIf it was you, you can confirm your email address here https://events.tfel.edu.au/verify_format.php?email='.$cleanData[emailaddress].'&edu_domain=true&authrandom=VC3XC4L3E. If you didn\'t make this request, you can safely ignore this message, no further action will be taken.\nBest Wishes,\nThe Teaching for Effective Learning Team';
+        $mail->AltBody = 'Hello '.$cleanData[firstname].'\nYou, or someome pretending to be you has registered for the TfEL App TfEL Events.\nIf it was you, you can confirm your email address here https://events.tfel.edu.au/attendees/verify_format.php?email='.$cleanData[emailaddress].'&edu_domain=true&authrandom=VC3XC4L3E. If you didn\'t make this request, you can safely ignore this message, no further action will be taken.\nBest Wishes,\nThe Teaching for Effective Learning Team';
         
         if(!$mail->send()) {
             echo '<strong>Mail error:</strong> ' . $mail->ErrorInfo;
