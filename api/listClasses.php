@@ -17,7 +17,7 @@ $return = array();
 foreach ($query as $key) {
 	$when = "From " . $key[dtbegin] . " to " . $key[dtend] . ".";
 	$url = "https://events.tfel.edu.au/attendees/?view_event=" . $key[id];
-	$topush = array("id" => $key['id'], "when" => $when, "name" => $key['name'], "cost" => $key['cost'], "catering" => $key['catering'], "detailsURL" => $url, );
+	$topush = array("id" => $key['id'], "when" => $when, "where" => $key['venue'], "name" => $key['name'], "cost" => $key['cost'], "catering" => $key['catering'], "detailsURL" => $url, );
 	array_push($return, $topush);
 }
 
