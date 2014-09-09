@@ -17,7 +17,11 @@ $view = $_GET['view_event'];
 $userData = login_verify($_COOKIE);
 
 // Wrapper
+if ($_GET['api'] = 1) {
+	
+} else {
 require "header.php";
+}
 
 if (!empty($view)) {
 	require "view_scaffold.php";
@@ -32,6 +36,10 @@ if (empty($register) && empty($view)) {
 }
 
 // Wrapper
+if ($_GET['api'] = 1) {
+	
+} else {
 require "footer.php";
+}
 
 ?>
