@@ -51,7 +51,7 @@ try {
         return_failed();
         die();
     } else {
-        header('Location: /register_complete.php?ex=:nil');
+        header('Location: /attendees/register_complete.php?ex=:nil');
     }
 } catch (Exception $e) {
     return_failed();
