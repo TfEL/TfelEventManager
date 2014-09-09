@@ -61,7 +61,7 @@ try {
         $mail->SMTPAuth = false;
         $mail->setFrom('no-reply@events.tfel.edu.au', 'TfEL App Support');
         $mail->addAddress($cleanData[emailaddress], $cleanData[firstname]);
-        $mail->Subject = '[TfEL Events] Teacher Registration';
+        $mail->Subject = '[TfEL Events] Registration';
         $mail->Body    = '<!DOCTYPE html>
 <html>
 <body>
