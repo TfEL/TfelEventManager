@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12D375F519BF11FB00B97435 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D375F419BF11FB00B97435 /* Foundation.framework */; };
+		12D375F719BF11FB00B97435 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D375F619BF11FB00B97435 /* CoreGraphics.framework */; };
+		12D375F919BF11FB00B97435 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D375F819BF11FB00B97435 /* UIKit.framework */; };
+		12D375FF19BF11FB00B97435 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12D375FD19BF11FB00B97435 /* InfoPlist.strings */; };
+		12D3760119BF11FB00B97435 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D3760019BF11FB00B97435 /* main.m */; };
+		12D3760519BF11FB00B97435 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D3760419BF11FB00B97435 /* AppDelegate.m */; };
+		12D3760819BF11FB00B97435 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12D3760619BF11FB00B97435 /* Main.storyboard */; };
+		12D3760B19BF11FB00B97435 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D3760A19BF11FB00B97435 /* ViewController.m */; };
+		12D3760D19BF11FB00B97435 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12D3760C19BF11FB00B97435 /* Images.xcassets */; };
+		12D3761419BF11FB00B97435 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D3761319BF11FB00B97435 /* XCTest.framework */; };
+		12D3761519BF11FB00B97435 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D375F419BF11FB00B97435 /* Foundation.framework */; };
+		12D3761619BF11FB00B97435 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D375F819BF11FB00B97435 /* UIKit.framework */; };
+		12D3761E19BF11FB00B97435 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12D3761C19BF11FB00B97435 /* InfoPlist.strings */; };
+		12D3762019BF11FB00B97435 /* TfEL_EventsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D3761F19BF11FB00B97435 /* TfEL_EventsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12D3761719BF11FB00B97435 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12D375E919BF11FB00B97435 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12D375F019BF11FB00B97435;
+			remoteInfo = "TfEL Events";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12D375F119BF11FB00B97435 /* TfEL Events.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TfEL Events.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12D375F419BF11FB00B97435 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		12D375F619BF11FB00B97435 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		12D375F819BF11FB00B97435 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		12D375FC19BF11FB00B97435 /* TfEL Events-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TfEL Events-Info.plist"; sourceTree = "<group>"; };
+		12D375FE19BF11FB00B97435 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		12D3760019BF11FB00B97435 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		12D3760219BF11FB00B97435 /* TfEL Events-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TfEL Events-Prefix.pch"; sourceTree = "<group>"; };
+		12D3760319BF11FB00B97435 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		12D3760419BF11FB00B97435 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		12D3760719BF11FB00B97435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		12D3760919BF11FB00B97435 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		12D3760A19BF11FB00B97435 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		12D3760C19BF11FB00B97435 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		12D3761219BF11FB00B97435 /* TfEL EventsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TfEL EventsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12D3761319BF11FB00B97435 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		12D3761B19BF11FB00B97435 /* TfEL EventsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TfEL EventsTests-Info.plist"; sourceTree = "<group>"; };
+		12D3761D19BF11FB00B97435 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		12D3761F19BF11FB00B97435 /* TfEL_EventsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TfEL_EventsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12D375EE19BF11FB00B97435 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12D375F719BF11FB00B97435 /* CoreGraphics.framework in Frameworks */,
+				12D375F919BF11FB00B97435 /* UIKit.framework in Frameworks */,
+				12D375F519BF11FB00B97435 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12D3760F19BF11FB00B97435 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12D3761419BF11FB00B97435 /* XCTest.framework in Frameworks */,
+				12D3761619BF11FB00B97435 /* UIKit.framework in Frameworks */,
+				12D3761519BF11FB00B97435 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12D375E819BF11FB00B97435 = {
+			isa = PBXGroup;
+			children = (
+				12D375FA19BF11FB00B97435 /* TfEL Events */,
+				12D3761919BF11FB00B97435 /* TfEL EventsTests */,
+				12D375F319BF11FB00B97435 /* Frameworks */,
+				12D375F219BF11FB00B97435 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		12D375F219BF11FB00B97435 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12D375F119BF11FB00B97435 /* TfEL Events.app */,
+				12D3761219BF11FB00B97435 /* TfEL EventsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12D375F319BF11FB00B97435 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12D375F419BF11FB00B97435 /* Foundation.framework */,
+				12D375F619BF11FB00B97435 /* CoreGraphics.framework */,
+				12D375F819BF11FB00B97435 /* UIKit.framework */,
+				12D3761319BF11FB00B97435 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		12D375FA19BF11FB00B97435 /* TfEL Events */ = {
+			isa = PBXGroup;
+			children = (
+				12D3760319BF11FB00B97435 /* AppDelegate.h */,
+				12D3760419BF11FB00B97435 /* AppDelegate.m */,
+				12D3760619BF11FB00B97435 /* Main.storyboard */,
+				12D3760919BF11FB00B97435 /* ViewController.h */,
+				12D3760A19BF11FB00B97435 /* ViewController.m */,
+				12D3760C19BF11FB00B97435 /* Images.xcassets */,
+				12D375FB19BF11FB00B97435 /* Supporting Files */,
+			);
+			path = "TfEL Events";
+			sourceTree = "<group>";
+		};
+		12D375FB19BF11FB00B97435 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				12D375FC19BF11FB00B97435 /* TfEL Events-Info.plist */,
+				12D375FD19BF11FB00B97435 /* InfoPlist.strings */,
+				12D3760019BF11FB00B97435 /* main.m */,
+				12D3760219BF11FB00B97435 /* TfEL Events-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		12D3761919BF11FB00B97435 /* TfEL EventsTests */ = {
+			isa = PBXGroup;
+			children = (
+				12D3761F19BF11FB00B97435 /* TfEL_EventsTests.m */,
+				12D3761A19BF11FB00B97435 /* Supporting Files */,
+			);
+			path = "TfEL EventsTests";
+			sourceTree = "<group>";
+		};
+		12D3761A19BF11FB00B97435 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				12D3761B19BF11FB00B97435 /* TfEL EventsTests-Info.plist */,
+				12D3761C19BF11FB00B97435 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12D375F019BF11FB00B97435 /* TfEL Events */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12D3762319BF11FB00B97435 /* Build configuration list for PBXNativeTarget "TfEL Events" */;
+			buildPhases = (
+				12D375ED19BF11FB00B97435 /* Sources */,
+				12D375EE19BF11FB00B97435 /* Frameworks */,
+				12D375EF19BF11FB00B97435 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TfEL Events";
+			productName = "TfEL Events";
+			productReference = 12D375F119BF11FB00B97435 /* TfEL Events.app */;
+			productType = "com.apple.product-type.application";
+		};
+		12D3761119BF11FB00B97435 /* TfEL EventsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12D3762619BF11FB00B97435 /* Build configuration list for PBXNativeTarget "TfEL EventsTests" */;
+			buildPhases = (
+				12D3760E19BF11FB00B97435 /* Sources */,
+				12D3760F19BF11FB00B97435 /* Frameworks */,
+				12D3761019BF11FB00B97435 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12D3761819BF11FB00B97435 /* PBXTargetDependency */,
+			);
+			name = "TfEL EventsTests";
+			productName = "TfEL EventsTests";
+			productReference = 12D3761219BF11FB00B97435 /* TfEL EventsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		12D375E919BF11FB00B97435 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Department for Education and Child Development";
+				TargetAttributes = {
+					12D3761119BF11FB00B97435 = {
+						TestTargetID = 12D375F019BF11FB00B97435;
+					};
+				};
+			};
+			buildConfigurationList = 12D375EC19BF11FB00B97435 /* Build configuration list for PBXProject "TfEL Events" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 12D375E819BF11FB00B97435;
+			productRefGroup = 12D375F219BF11FB00B97435 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12D375F019BF11FB00B97435 /* TfEL Events */,
+				12D3761119BF11FB00B97435 /* TfEL EventsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		12D375EF19BF11FB00B97435 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12D3760D19BF11FB00B97435 /* Images.xcassets in Resources */,
+				12D375FF19BF11FB00B97435 /* InfoPlist.strings in Resources */,
+				12D3760819BF11FB00B97435 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12D3761019BF11FB00B97435 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12D3761E19BF11FB00B97435 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12D375ED19BF11FB00B97435 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12D3760B19BF11FB00B97435 /* ViewController.m in Sources */,
+				12D3760519BF11FB00B97435 /* AppDelegate.m in Sources */,
+				12D3760119BF11FB00B97435 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12D3760E19BF11FB00B97435 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12D3762019BF11FB00B97435 /* TfEL_EventsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		12D3761819BF11FB00B97435 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12D375F019BF11FB00B97435 /* TfEL Events */;
+			targetProxy = 12D3761719BF11FB00B97435 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		12D375FD19BF11FB00B97435 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12D375FE19BF11FB00B97435 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		12D3760619BF11FB00B97435 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12D3760719BF11FB00B97435 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		12D3761C19BF11FB00B97435 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12D3761D19BF11FB00B97435 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		12D3762119BF11FB00B97435 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		12D3762219BF11FB00B97435 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		12D3762419BF11FB00B97435 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TfEL Events/TfEL Events-Prefix.pch";
+				INFOPLIST_FILE = "TfEL Events/TfEL Events-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		12D3762519BF11FB00B97435 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TfEL Events/TfEL Events-Prefix.pch";
+				INFOPLIST_FILE = "TfEL Events/TfEL Events-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		12D3762719BF11FB00B97435 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TfEL Events.app/TfEL Events";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TfEL Events/TfEL Events-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TfEL EventsTests/TfEL EventsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		12D3762819BF11FB00B97435 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TfEL Events.app/TfEL Events";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TfEL Events/TfEL Events-Prefix.pch";
+				INFOPLIST_FILE = "TfEL EventsTests/TfEL EventsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12D375EC19BF11FB00B97435 /* Build configuration list for PBXProject "TfEL Events" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12D3762119BF11FB00B97435 /* Debug */,
+				12D3762219BF11FB00B97435 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12D3762319BF11FB00B97435 /* Build configuration list for PBXNativeTarget "TfEL Events" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12D3762419BF11FB00B97435 /* Debug */,
+				12D3762519BF11FB00B97435 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		12D3762619BF11FB00B97435 /* Build configuration list for PBXNativeTarget "TfEL EventsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12D3762719BF11FB00B97435 /* Debug */,
+				12D3762819BF11FB00B97435 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 12D375E919BF11FB00B97435 /* Project object */;
+}
