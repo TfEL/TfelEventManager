@@ -1,5 +1,5 @@
 <?php
 
-header("Location: /attendees/");
+header("Location: https://events.tfel.edu.au/attendees/");
 
 ?>
