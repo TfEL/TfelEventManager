@@ -35,9 +35,9 @@ foreach($query as $key) {
 <form action="complete_scaffold.php" method="get">
 	<input type="hidden" name="register_event" value="<?=$event?>">
 	
-	<p>Full Name <span style="color:red">*</span><br><input type="text" class="form-control" name="name" placeholder="Full Name" required></p>
-	<p>School / Site <span style="color:red">*</span><br><input type="text" class="form-control" name="school" placeholder="School" required></p>
-	<p>Email Address <span style="color:red">*</span><br><input type="email" class="form-control" name="email" placeholder="Email Address" required></p>
+	<p>Full Name <span style="color:red">*</span><br><input type="text" class="form-control" name="name" placeholder="Full Name" value="<?=$userData['first_name']?>" required></p>
+	<p>School / Site <span style="color:red">*</span><br><input type="text" class="form-control" name="school" placeholder="School" value="<?=$userData['decd_site']?>" required></p>
+	<p>Email Address <span style="color:red">*</span><br><input type="email" class="form-control" name="email" placeholder="Email Address" value="<?=$userData['email_address']?>" required></p>
 	<p>Phone Number (inc area code) <span style="color:red">*</span><br><input type="phone" class="form-control" name="phone" placeholder="Phone Number" required></p>
 	<p>Dietary Requirements <br><input type="text" class="form-control" name="dietary" placeholder="None" required></p>
 	

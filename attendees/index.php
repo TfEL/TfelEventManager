@@ -8,10 +8,13 @@
 // Functions
 require "../api/api.fnc.php";
 require "../api/settings.php";
+require "loginverification.fnc.php";
 
 // Getters
 $register = $_GET['register_event'];
 $view = $_GET['view_event'];
+
+$userData = login_verify($_COOKIE);
 
 // Wrapper
 require "header.php";
