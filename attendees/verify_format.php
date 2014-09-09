@@ -4,8 +4,8 @@
 // © 2014 Department for Education and Child Development
 
 // @Requries - uses the settings from the API for centralisation
-require './api/settings.php';
-require './api/api.fnc.php';
+require '../api/settings.php';
+require '../api/api.fnc.php';
 
 // @Headers
 date_default_timezone_set("Australia/Adelaide");
