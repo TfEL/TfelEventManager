@@ -6,8 +6,12 @@ $failed = $_GET[failed];
 
 ?>
 
+<div class="page-header">
+	<h2>Teaching for Effective Learning Events</h2>
+	<p class="lead">Register to speed up registrations</p>
+</div>
 
-	<h1>Teacher Registration</h1>
+	<h1>Registration</h1>
     
     <div style="max-width: 350px; margin-left:auto; margin-right:auto;">
         <?php if($failed ==true) { echo '<br /><div class="alert alert-warning" role="alert"><p><strong>Oops:</strong> something didn\'t work, please try again.</p></div>'; } ?>
