@@ -9,7 +9,7 @@ $socket = ConnectToDatabase($db);
 $event = $socket->real_escape_string(filter_var($_GET['view_event'], FILTER_SANITIZE_FULL_SPECIAL_CHARS, FILTER_FLAG_NO_ENCODE_QUOTES));
 
 $query = MakeDatabaseQuery("SELECT * FROM `events` WHERE `id`=$event;", $socket);
-if ($_GET['api'] = 1) { } 
+if ($_GET['api'] = 1) { echo "<br>" } 
 else {
 ?>
 
