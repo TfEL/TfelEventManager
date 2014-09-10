@@ -15,9 +15,11 @@ $query = MakeDatabaseQuery("SELECT * FROM `events`;", $socket);
 $return = array();
 
 foreach ($query as $key) {
-	$when = "From " . $key[dtbegin] . " to " . $key[dtend] . ".";
+	$when_from = "From " . $key[dtbegin];
+	$when_to = "To: " . $key[dtend];
+	$start = substr($key[dtbegin], -9);
 	$url = "https://events.tfel.edu.au/attendees/?view_event=" . $key[id] . "&api=1";
-	$topush = array("id" => $key['id'], "when" => $when, "where" => $key['venue'], "name" => $key['name'], "cost" => $key['cost'], "catering" => $key['catering'], "detailsURL" => $url, );
+	$topush = array("id" => $key['id'], "when_from" => $when_from, "when_to" => $when_to, "start" => $start, "where" => $key['venue'], "name" => $key['name'], "cost" => $key['cost'], "catering" => $key['catering'], "detailsURL" => $url, );
 	array_push($return, $topush);
 }
 
