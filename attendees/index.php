@@ -33,7 +33,7 @@ if (empty($register) && empty($view)) {
 }
 
 // Wrapper
-if ($_GET['api'] = 1) { } else {
+if ($_GET['api'] == 1) { } else {
 require "footer.php"; }
 
 ?>

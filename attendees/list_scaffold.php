@@ -27,7 +27,7 @@ foreach($query as $key) {
 			echo "<p><strong>When:</strong> $key[dtbegin] to $key[dtend].</p>";
 			echo "<p><strong>Where:</strong> $key[venue].</p>";
 			echo "<p><strong>Cost:</strong> $key[cost].</p>";
-			echo "<div class=\"pull-right\"> <a href=\"./?view_event=$key[id]\" class=\"btn btn-success\"> <span class=\"glyphicon glyphicon-map-marker\"></span> Learn More</a> <a href=\"./?register_event=$key[id]\" class=\"btn btn-primary\"> <span class=\"glyphicon glyphicon-flag\"></span> Register Now</a> </div>"; }
+			echo "<div class=\"pull-right\"> <a href=\"./?view_event=$key[id]\" class=\"btn btn-success\"> <span class=\"glyphicon glyphicon-map-marker\"></span> Learn More</a> <a href=\"./?register_event=$key[id]\" class=\"btn btn-primary\"> <span class=\"glyphicon glyphicon-flag\"></span> Register Now</a> </div>";
 		echo "</div>";
 	echo "</div>";
 }
