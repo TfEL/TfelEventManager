@@ -90,14 +90,13 @@ if (!$return) {
 		    </div>
 		</body>
 		</html>';
-
-		        if(!$mail->send()) {
-		            echo '<strong>Mail error:</strong> ' . $mail->ErrorInfo;
-		            $success = false;
-					$error_message = "Internal software error, it's not you, it's us, please try again";
-		        } else {
-		            header('Location: /attendees/register_complete.php');
-		        }
+	$mail->AltBody = 'Hello '.$name.',\n\nThis message confirms your recent registration for '.$ename.'.\n\nThank you,\The Teaching for Effective Learning Team.';
+	
+       if(!$mail->send()) {
+          echo '<strong>Mail error:</strong> ' . $mail->ErrorInfo;
+          $success = false;
+		 $error_message = "Internal software error, it's not you, it's us, please try again";
+      }
 		
 		
 	} else { 

@@ -74,7 +74,8 @@ if (!$return) {
 	    </div>
 	</body>
 	</html>';
-
+	$mail->AltBody = 'Hello '.$name.',\n\nThis message confirms your recent registration for '.$ename.'.\n\nThank you,\The Teaching for Effective Learning Team.';
+	
 	 if(!$mail->send()) {
 	   $success = false;
 	   $error_message = "Internal software error, it's not you, it's us, please try again. $mail->ErrorInfo.";
