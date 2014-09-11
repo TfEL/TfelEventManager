@@ -32,6 +32,56 @@ if (!$return) {
 	$error_message = "Internal software error, it's not you, it's us, please try again";
 } else { 
 	$success = true;
+	
+	$query = MakeDatabaseQuery("SELECT * FROM `events` WHERE `id`=$event;", $socket);
+	
+	foreach($query as $key) {
+		$ename = $key[name];
+		$edtbegin =  $key[dtbegin];
+		$edtend = $key[dtend];
+		$evenue =  $key[venue];
+		$ecost = $key[cost];
+		$ecatering = $key[catering];
+	}
+	
+	        require '../attendees/includes/PHPMailerAutoload.php';
+
+	        $mail = new PHPMailer();
+	        $mail->isSMTP();
+	        $mail->Host = 'mail.internode.on.net';
+	        $mail->SMTPAuth = false;
+	        $mail->setFrom('no-reply@events.tfel.edu.au', 'TfEL Events');
+	        $mail->addAddress($cleanData[emailaddress], $cleanData[firstname]);
+	        $mail->Subject = 'Event Registration Confirmation';
+	        $mail->Body    = '<!DOCTYPE html>
+	<html>
+	<body>
+	    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	    <div class="container">
+	        <h2>Event Registration Confirmation</h2>
+	        <p>Hello '.$name.',</p>
+	        <p>This message confirms your recent registration for '.$ename.'.</p>
+			<p>The event starts '.$edtbegin.' and ends '. $edtend .', and will be hosted at '. $evenue .'.</p>
+			<h3>For your records</h3>
+			<p>Cost: '.$ecost.'.</p>
+			<p>Catering:  '.$ecatering.'.</p>
+			<p>Your information: name '.$name.', school '.$school.', email '.$email.', phone '.$phone.', dietary requirements '.$dietary.'.</p>
+	        <p>Best Wishes,</p>
+	        <p>The Teaching for Effective Learning Team</p>
+	        <p>Online: <a href="//www.tfel.edu.au" target="_blank">TfEL Resources</a><br>Phone: <a href="tel:0882264351">08 8226 4351</a></p>
+	        <p><small>Please do not reply to this email. Use the contact address above.</small></p>
+	    </div>
+	</body>
+	</html>';
+
+	        if(!$mail->send()) {
+	            echo '<strong>Mail error:</strong> ' . $mail->ErrorInfo;
+	            $success = false;
+				$error_message = "Internal software error, it's not you, it's us, please try again";
+	        } else {
+	            header('Location: /attendees/register_complete.php');
+	        }
 }
 
 if (!$error_message) {
