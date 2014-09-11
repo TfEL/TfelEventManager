@@ -86,8 +86,8 @@ try {
             echo '<strong>Mail error:</strong> ' . $mail->ErrorInfo;
             return_failed();
         } else {
-            header('Location: /attendees/register_complete.php');
-        }
+		header("Location: /attendees/register_complete.php");
+}
     }
 } catch (Exception $e) {
     return_failed();
