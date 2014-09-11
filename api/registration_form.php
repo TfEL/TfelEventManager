@@ -38,8 +38,8 @@ if (!$error_message) {
 	$error_message = "Success";
 }
 
-$return = array("Success" => $success, $message => $error_message);
+$return = array("Success" => $success, "Message" => $error_message);
 
-echo json_encode($return);
+echo json_encode($return, JSON_PRETTY_PRINT);
 
 ?>
