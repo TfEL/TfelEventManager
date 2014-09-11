@@ -51,7 +51,7 @@ if (!$return) {
 	        $mail->Host = 'mail.internode.on.net';
 	        $mail->SMTPAuth = false;
 	        $mail->setFrom('no-reply@events.tfel.edu.au', 'TfEL Events');
-	        $mail->addAddress($cleanData[emailaddress], $cleanData[firstname]);
+	        $mail->addAddress($email, $name);
 	        $mail->Subject = 'Event Registration Confirmation';
 	        $mail->Body    = '<!DOCTYPE html>
 	<html>
@@ -76,9 +76,8 @@ if (!$return) {
 	</html>';
 
 	        if(!$mail->send()) {
-	            echo '<strong>Mail error:</strong> ' . $mail->ErrorInfo;
 	            $success = false;
-				$error_message = "Internal software error, it's not you, it's us, please try again";
+				$error_message = "Internal software error, it's not you, it's us, please try again. $mail->ErrorInfo.";
 	        } else {
 	            header('Location: /attendees/register_complete.php');
 	        }

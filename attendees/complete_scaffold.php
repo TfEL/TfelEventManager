@@ -61,16 +61,15 @@ if (!$return) {
 			$ecatering = $key[catering];
 		}
 		
-		        require './includes/PHPMailerAutoload.php';
-
-		        $mail = new PHPMailer();
-		        $mail->isSMTP();
-		        $mail->Host = 'mail.internode.on.net';
-		        $mail->SMTPAuth = false;
-		        $mail->setFrom('no-reply@events.tfel.edu.au', 'TfEL Events');
-		        $mail->addAddress($cleanData[emailaddress], $cleanData[firstname]);
-		        $mail->Subject = 'Event Registration Confirmation';
-		        $mail->Body    = '<!DOCTYPE html>
+        require './includes/PHPMailerAutoload.php';
+        $mail = new PHPMailer();
+        $mail->isSMTP();
+        $mail->Host = 'mail.internode.on.net';
+        $mail->SMTPAuth = false;
+        $mail->setFrom('no-reply@events.tfel.edu.au', 'TfEL Events');
+        $mail->addAddress($email, $name);
+        $mail->Subject = 'Event Registration Confirmation';
+        $mail->Body    = '<!DOCTYPE html>
 		<html>
 		<body>
 		    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
