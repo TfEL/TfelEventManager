@@ -75,12 +75,10 @@ if (!$return) {
 	</body>
 	</html>';
 
-	        if(!$mail->send()) {
-	            $success = false;
-				$error_message = "Internal software error, it's not you, it's us, please try again. $mail->ErrorInfo.";
-	        } else {
-	            header('Location: /attendees/register_complete.php');
-	        }
+	 if(!$mail->send()) {
+	   $success = false;
+	   $error_message = "Internal software error, it's not you, it's us, please try again. $mail->ErrorInfo.";
+	 } 
 }
 
 if (!$error_message) {
