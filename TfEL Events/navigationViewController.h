@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  navigationViewController.h
 //  TfEL Events
 //
 //  Created by Aidan Cornelius-Bell on 9/09/2014.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface navigationViewController : UINavigationController
 
 @end

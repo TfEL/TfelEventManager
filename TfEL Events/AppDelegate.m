@@ -8,11 +8,22 @@
 
 #import "AppDelegate.h"
 
+#import "calendarControl.h"
+
 @implementation AppDelegate
+
+@synthesize events;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    events = [[NSData alloc] init];
+    
+    [calendarControl requestAccess:^(BOOL granted, NSError *error) {
+        if (granted == YES)
+            NSLog(@"Calendar Access Granted");
+    }];
+    
     return YES;
 }
 							
