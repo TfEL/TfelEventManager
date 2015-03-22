@@ -22,7 +22,7 @@ function configure_active_database ( ) {
 
 	$db["DatabaseUsername"] = "eventmanager";
 
-	$db["DatabasePassword"] = "qthNeYtzvNvTttrF";
+	$db["DatabasePassword"] = "";
 
 	return $db;
 }
